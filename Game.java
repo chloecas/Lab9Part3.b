@@ -118,6 +118,10 @@ public class Game
             case QUIT:
                 wantToQuit = quit(command);
                 break;
+                
+            case LOOK:
+                System.out.println(currentRoom.getLongDescription());
+                break; //Question 39 Lab 9
         }
         return wantToQuit;
     }
